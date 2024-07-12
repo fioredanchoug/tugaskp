@@ -1,5 +1,12 @@
 <?php
 
+session_start();
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+
+
 $servername = "153.92.15.25";
 $username = "u644123111_ojie72";
 $password = "L1nkstart!";
