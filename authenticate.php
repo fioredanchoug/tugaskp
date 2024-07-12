@@ -1,10 +1,7 @@
 <?php
 session_start();
-$conn = new mysqli("localhost", "ojie72", "ojie7248", "tugaskp");
 
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+require_once 'db.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $username = $_POST['username'];
