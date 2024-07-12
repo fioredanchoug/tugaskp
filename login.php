@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION['username'] = $username;
             header("Location: welcome.php");
             exit();
-            echo "Login successful!";
+            
         } 
     } else {
         echo "User not found.";
