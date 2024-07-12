@@ -2,8 +2,8 @@
 
 $servername = "153.92.15.25";
 $username = "ojie72";
-$password = "linkstart!";
-$dbname = "u644123111_tugaskp";
+$password = "L1nkstart!";
+$dbname = "tugaskp";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
