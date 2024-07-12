@@ -16,9 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             header("Location: welcome.php");
             exit();
             echo "Login successful!";
-        } else {
-            echo "Incorrect password.";
-        }
+        } 
     } else {
         echo "User not found.";
     }
