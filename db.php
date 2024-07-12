@@ -3,7 +3,7 @@
 $servername = "153.92.15.25";
 $username = "ojie72";
 $password = "linkstart!";
-$dbname = "tugaskp";
+$dbname = "u644123111_tugaskp";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
