@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = $_POST['password'];
 
 
-$servername = "153.92.15.25";
+$servername = "localhost";
 $username = "u644123111_ojie72";
 $password = "L1nkstart!";
 $dbname = "u644123111_tugaskp";
