@@ -41,16 +41,7 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-12 col-md-6 col-lg-4 my-2">
-                <div class="card shadow p-2" style="min-height: 30rem;">
-                    <img src="./assets/img/logo-kcj.png" class="card-img-top" style="min-height: 20rem; object-fit:contain;" alt="Logo KRL">
-                    <div class="card-body">
-                        <h5 class="card-title">KRL</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Detail <i class="bi bi-arrow-right ms-1"></i></a>
-                    </div>
-                </div>
-            </div>
+            
             <div class="col-12 col-md-6 col-lg-4 my-2">
                 <div class="card shadow p-2" style="min-height: 30rem;">
                     <img src="./assets/img/logo-lrt.jpeg" class="card-img-top" style="min-height: 20rem; object-fit: cover;" alt="Logo LRT">
