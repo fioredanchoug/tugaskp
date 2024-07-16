@@ -24,10 +24,10 @@ if (isset($_POST['uname']) && isset($_POST['password'])) {
 		$sql = "SELECT * FROM users WHERE username='$uname' AND password='$pass'";
 		$sql2 = "SELECT * FROM admin WHERE username='$uname' AND password='$pass'";
 
-		$result = mysqli_query($conn, $sql, $sql2,);
+		$result1 = mysqli_query($conn, $sql, );
 
-		if (mysqli_num_rows($result) === 1) {
-			$row = mysqli_fetch_assoc($result);
+		if (mysqli_num_rows($result1) === 1) {
+			$row = mysqli_fetch_assoc($result1);
             if ($row['username'] === $uname && $row['password'] === $pass) {
             	$_SESSION['username'] = $row['username'];
             	$_SESSION['id'] = $row['id'];
