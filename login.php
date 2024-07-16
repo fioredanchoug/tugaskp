@@ -22,8 +22,9 @@ if (isset($_POST['uname']) && isset($_POST['password'])) {
 	    exit();
 	}else{
 		$sql = "SELECT * FROM users WHERE username='$uname' AND password='$pass'";
+		$sql2 = "SELECT * FROM users WHERE username='$uname' AND password='$pass'";
 
-		$result = mysqli_query($conn, $sql);
+		$result = mysqli_query($conn, $sql, $sql2);
 
 		if (mysqli_num_rows($result) === 1) {
 			$row = mysqli_fetch_assoc($result);
