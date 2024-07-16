@@ -1,4 +1,15 @@
+<?php
+session_start();
 
+// Check if user is logged in
+if (!isset($_SESSION['id'])) {
+    header("Location: index.php");
+    exit;
+}
+
+// Display user information or any other content
+echo "Welcome, " . $_SESSION['username'];
+?>
 <!DOCTYPE html>
 <html>
 
