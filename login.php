@@ -22,10 +22,10 @@ if (isset($_POST['uname']) && isset($_POST['password'])) {
 	    exit();
 	}else{
 		$sql = "SELECT * FROM users WHERE username='$uname' AND password='$pass'";
-		$sql2 = "SELECT * FROM admin WHERE username='$uname' AND password='$pass'";
+		
 
 		$result1 = mysqli_query($conn, $sql, );
-		$result2 = mysqli_query($conn, $sql2, );
+		
 
 		if (mysqli_num_rows($result1) === 1) {
 			$row = mysqli_fetch_assoc($result1);
@@ -42,7 +42,15 @@ if (isset($_POST['uname']) && isset($_POST['password'])) {
 			header("Location: index.php?error=Incorect User name or password");
 	        exit();
 		}
-		else if (mysqli_num_rows($result1) === 1) {
+		
+	}else{
+		
+		$sql2 = "SELECT * FROM admin WHERE username='$uname' AND password='$pass'";
+
+		
+		$result2 = mysqli_query($conn, $sql2, );
+
+		if (mysqli_num_rows($result2) === 1) {
 			$row = mysqli_fetch_assoc($result2);
             if ($row['username'] === $uname && $row['password'] === $pass) {
             	$_SESSION['username'] = $row['username'];
@@ -57,7 +65,6 @@ if (isset($_POST['uname']) && isset($_POST['password'])) {
 			header("Location: index.php?error=Incorect User name or password");
 	        exit();
 		}
-	}
 	
 }else{
 	header("Location: index.php");
