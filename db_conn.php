@@ -1,6 +1,6 @@
 <?php
 
-$sname= "https://auth-db1367.hstgr.io/";
+$sname= "https://auth-db1367.hstgr.io/index.php?route=/";
 $unmae= "u644123111_ojie7248";
 $password = "Ojie7248";
 
