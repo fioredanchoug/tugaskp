@@ -43,28 +43,7 @@ if (isset($_POST['uname']) && isset($_POST['password'])) {
 	        exit();
 		}
 		
-	}else{
-		
-		$sql2 = "SELECT * FROM admin WHERE username='$uname' AND password='$pass'";
-
-		
-		$result2 = mysqli_query($conn, $sql2, );
-
-		if (mysqli_num_rows($result2) === 1) {
-			$row = mysqli_fetch_assoc($result2);
-            if ($row['username'] === $uname && $row['password'] === $pass) {
-            	$_SESSION['username'] = $row['username'];
-            	$_SESSION['id'] = $row['id'];
-            	header("Location: welcome.php");
-		        exit();
-            }else{
-				header("Location: index.php?error=Incorect User name or password");
-		        exit();
-			}
-		}else{
-			header("Location: index.php?error=Incorect User name or password");
-	        exit();
-		}
+	}
 	
 }else{
 	header("Location: index.php");
