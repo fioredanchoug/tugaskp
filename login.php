@@ -22,7 +22,7 @@ if (isset($_POST['uname']) && isset($_POST['password'])) {
 	    exit();
 	}else{
 		$sql = "SELECT * FROM users WHERE username='$uname' AND password='$pass'";
-		
+		$sq2l = "SELECT * FROM admin WHERE username='$uname' AND password='$pass'";
 
 		$result = mysqli_query($conn, $sql,);
 
