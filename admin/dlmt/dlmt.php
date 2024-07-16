@@ -43,12 +43,12 @@
         <div class="row">
         
             <div class="col-12 col-md-6 col-lg-4 my-2">
-            <a href="./admin/dlmt/dlmt.php" class="btn btn-primary">                
+            <a href="./w/welcome2.php" class="btn btn-primary">                
                 <div class="card shadow p-2" style="min-height: 30rem;">
                 
-                    <img src="./assets/img/location.png" class="card-img-top" style="min-height: 20rem; object-fit:contain;" alt="Logo KRL">
+                    <img src="./assets/img/logo-kcj.png" class="card-img-top" style="min-height: 20rem; object-fit:contain;" alt="Logo KRL">
                     <div class="card-body">
-                        <h5 class="card-title">DATA LOKASI MODA TRANSPORTASI</h5>                     
+                        <h5 class="card-title">KERETA REL LISTRIK</h5>                     
                     </div>
                     
                 </div>
@@ -56,11 +56,11 @@
             </div>
             
             <div class="col-12 col-md-6 col-lg-4 my-2">
-            <a href="./admin/ddmt/ddmt.php" class="btn btn-primary"> 
+            <a href="welcome2.php" class="btn btn-primary"> 
                 <div class="card shadow p-2" style="min-height: 30rem;">
-                    <img src="./assets/img/device.png" class="card-img-top" style="min-height: 20rem; object-fit: cover;" alt="Logo LRT">
+                    <img src="./assets/img/logo-mrt.webp" class="card-img-top" style="min-height: 20rem; object-fit: cover;" alt="Logo LRT">
                     <div class="card-body">
-                        <h5 class="card-title">DATA DEVICE MODA TRANSPORTASI</h5>                        
+                        <h5 class="card-title">Mass Rapid Transit</h5>                        
                     </div>
                 </div>
                 </a>
@@ -68,23 +68,13 @@
             <div class="col-12 col-md-6 col-lg-4 my-2">
             <a href="welcome2.php" class="btn btn-primary"> 
                 <div class="card shadow p-2" style="min-height: 30rem;">
-                    <img src="./assets/img/computer.png" class="card-img-top" style="min-height: 20rem; object-fit: cover;" alt="Logo LRT">
+                    <img src="./assets/img/logo-lrt.jpeg" class="card-img-top" style="min-height: 20rem; object-fit: cover;" alt="Logo LRT">
                     <div class="card-body">
-                        <h5 class="card-title">DATA MONITORING MODA TRANSPORTASI</h5>                        
+                        <h5 class="card-title">Light Rapid Transit</h5>                        
                     </div>
                 </div>
                 </a>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 my-2">
-            <a href="welcome2.php" class="btn btn-primary"> 
-                <div class="card shadow p-2" style="min-height: 30rem;">
-                    <img src="./assets/img/account.png" class="card-img-top" style="min-height: 20rem; object-fit: cover;" alt="Logo LRT">
-                    <div class="card-body">
-                        <h5 class="card-title">AKUN PENGGUNA APLIKASI</h5>                        
-                    </div>
-                </div>
-                </a>
-            </div>
+            </div>            
         </div>
     </div>
 
