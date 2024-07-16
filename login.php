@@ -2,7 +2,7 @@
 session_start();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    require_once "db_connect.php";
+    require_once "db.php";
 
     $username = $_POST['username'];
     $password = $_POST['password'];
