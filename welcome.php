@@ -7,8 +7,7 @@ if (!isset($_SESSION['id'])) {
     exit;
 }
 
-// Display user information or any other content
-echo "Welcome, " . $_SESSION['username'];
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -45,7 +44,7 @@ echo "Welcome, " . $_SESSION['username'];
     </nav>
 
     <div class="welcome-text text-center my-4">
-        <h2>Selamat datang, Admin</h2>
+        <h2>Welcome, <?php echo $_SESSION['username']; ?>!</h2>
         <span>Silahkan pilih menu</span>
     </div>
 
