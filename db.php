@@ -1,6 +1,6 @@
 <?php
 
-$servername = "https://auth-db1367.hstgr.io/";  
+$servername = "localhost";  
 $username = "u644123111_ojie72";     
 $password = "L1nkstart!";     
 $dbname = "u644123111_tugaskp";  
