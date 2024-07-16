@@ -25,6 +25,7 @@ if (isset($_POST['uname']) && isset($_POST['password'])) {
 		$sql2 = "SELECT * FROM admin WHERE username='$uname' AND password='$pass'";
 
 		$result1 = mysqli_query($conn, $sql, );
+		$result2 = mysqli_query($conn, $sql2, );
 
 		if (mysqli_num_rows($result1) === 1) {
 			$row = mysqli_fetch_assoc($result1);
