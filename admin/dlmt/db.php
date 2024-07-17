@@ -2,10 +2,11 @@
 // admin_users.php
 header('Content-Type: application/json');
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "test";
+$sname= "localhost";
+$unmae= "u644123111_ojie7248";
+$password = "Ojie7248";
+
+$db_name = "u644123111_kp";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
