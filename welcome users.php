@@ -2,7 +2,7 @@
 session_start();
 
 if (!isset($_SESSION['username'])) {
-    header("Location: .../index.php");
+    header("Location: index.php");
     exit();
 }
 
@@ -51,7 +51,7 @@ if (!isset($_SESSION['username'])) {
         <div class="row">
         
             <div class="col-12 col-md-6 col-lg-4 my-2">
-            <a href="./krl.php" class="btn btn-primary">                
+            <a href="./w/welcome2.php" class="btn btn-primary">                
                 <div class="card shadow p-2" style="min-height: 30rem;">
                 
                     <img src="./assets/img/logo-kcj.png" class="card-img-top" style="min-height: 20rem; object-fit:contain;" alt="Logo KRL">

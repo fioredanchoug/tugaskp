@@ -1,4 +1,12 @@
+<?php
+session_start();
 
+if (!isset($_SESSION['username'])) {
+    header("Location: index.php");
+    exit();
+}
+
+?>
 <!DOCTYPE html>
 <html>
 
@@ -34,7 +42,7 @@
     </nav>
 
     <div class="welcome-text text-center my-4">
-        <h2>Selamat datang, Admin</h2>
+        <h2>Welcome, <?php echo $_SESSION['username']; ?></h2>
         <span>Silahkan pilih menu</span>
     </div>
 
@@ -76,7 +84,7 @@
                 </a>
             </div>
             <div class="col-12 col-md-6 col-lg-4 my-2">
-            <a href="welcome2.php" class="btn btn-primary"> 
+            <a href="./admin/dlmt/krl.php" class="btn btn-primary"> 
                 <div class="card shadow p-2" style="min-height: 30rem;">
                     <img src="./assets/img/account.png" class="card-img-top" style="min-height: 20rem; object-fit: cover;" alt="Logo LRT">
                     <div class="card-body">
